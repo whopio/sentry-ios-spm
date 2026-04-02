@@ -17,7 +17,7 @@ fi
 URL="https://github.com/getsentry/sentry-cocoa/releases/download/${VERSION}/Sentry.xcframework.zip"
 
 echo "Downloading Sentry.xcframework.zip for ${VERSION}..."
-TMPFILE=$(mktemp)
+TMPFILE=$(mktemp /tmp/sentry-XXXXXX.zip)
 if ! curl -fSL "$URL" -o "$TMPFILE" 2>/dev/null; then
   echo "Error: Failed to download ${URL}"
   echo "Check that version ${VERSION} exists at https://github.com/getsentry/sentry-cocoa/releases"
