@@ -10,8 +10,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "Sentry",
-            url: "https://github.com/getsentry/sentry-cocoa/releases/download/9.8.0/Sentry.xcframework.zip",
-            checksum: "17b5cdca223d333f21609c59b97afe26b964eddba3b89186033386d7ba22024d"
+            url: "https://github.com/getsentry/sentry-cocoa/releases/download/9.11.0/Sentry.xcframework.zip",
+            checksum: "438de2c5afb7dde20b640af35dd841961aa2aa4d2719e40c92d48bd2aa5dca56"
         ),
         .target(
             name: "SentryCppHelper",
